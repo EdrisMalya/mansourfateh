@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Banner from "@/components/banner";
-import Link from "next/link";
 import ComponentOne from "@/components/ComponentOne";
 import ComponentTwo from "@/components/component-two";
 import ContactComponent from "@/components/contact-component";
