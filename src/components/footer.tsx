@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { db } from "@/libs/db";
+import { db } from "@/lib/db";
 import Link from "next/link";
 
 const Footer = () => {

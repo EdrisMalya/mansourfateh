@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeIcon, MailIcon, PhoneIcon } from "lucide-react";
-import { db } from "@/libs/db";
+import { db } from "@/lib/db";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
