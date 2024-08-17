@@ -1,6 +1,6 @@
 export const db = {
   company: {
-    address: "Kabul, Afghanistan Parwan 3",
+    address: "Kabul, Afghanistan Parwan 2",
     phone: "+93 1234567890",
     email: "mansourfateh@malia.af",
     logo: "/logo.jpeg",
