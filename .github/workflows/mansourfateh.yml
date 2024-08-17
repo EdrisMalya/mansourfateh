@@ -1,0 +1,31 @@
+name: AEM-POS
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  backend:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.HOST_USERNAME }}
+          password: ${{ secrets.HOST_PASSWORD }}
+          script: |
+            cd /home/edris/projects/mansourfateh/
+            git pull origin main
+            
+            docker rm -f mansourfateh
+            
+            docker image rm -f mansourfateh
+            
+            docker build -t mansourfateh .
+            
+            docker run -d -p 3007:3000 --name mansourfateh --restart=always mansourfateh

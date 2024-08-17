@@ -1,8 +1,8 @@
 export const db = {
   company: {
-    address: "Kabul, Afghanistan Parwan 2",
+    address: "Kabul, Afghanistan Parwan 3",
     phone: "+93 1234567890",
-    email: "company@example.com",
+    email: "mansourfateh@malia.af",
     logo: "/logo.jpeg",
   },
   website: {
